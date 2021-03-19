@@ -7,7 +7,7 @@ module.exports = {
 }
 
 function addResource(){
-    return db('resources').insert(resource)
+    return db('resources').insert(resource).into('resources')
 }
 
 function findResource(){

@@ -7,7 +7,7 @@ module.exports = {
 }
 
 function addProject(){
-    return db('projects').insert(project)
+    return db('projects').insert(project).into('projects')
 }
 
 function findProject(){

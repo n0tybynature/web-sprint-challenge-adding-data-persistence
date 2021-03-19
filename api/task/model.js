@@ -7,7 +7,7 @@ module.exports = {
 }
 
 function addTask(){
-    return db('task').insert(task)
+    return db('task').insert(task).into('tasks')
 }
 
 function findTask(){

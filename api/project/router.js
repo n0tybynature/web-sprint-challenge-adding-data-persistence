@@ -16,9 +16,9 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const projectData = req.body
 
-    Project.insert(projectData)
+    Project.add(projectData)
         .then(() => {
-            res.status(200).json(projectData)
+            res.status(201).json(projectData)
         })
         .catch(err => {
             res.status(500).json({message:`${err}`})
